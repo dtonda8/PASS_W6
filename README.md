@@ -40,13 +40,15 @@ Example 2:
 Note: 
 - String consists of letters, numbers and one type of parentheses `()`
 
+Extension: Can you do this without using any data structures? 
+
 
 ---
 ### Q2: Get book titles at and after start year
 
 You are given a list of book objects sorted by publication year, `books`, and an integer `start_year`. Return an Iterable (any object with the `__iter__` method) of all book titles having a publication year greater than `start_year`. 
 
-Extension: Write an algorithm that does this in total (log(n)). 
+Extension: Write an algorithm that does not you any additional data structure and has an initial time complexity of O(log(n)), where n = number of books 
 
 *Examples*
 

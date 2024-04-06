@@ -3,7 +3,7 @@
 __author__ = 'Maria Garcia de la Banda, modified by Brendon Taylor and Alexey Ignatiev'
 __docformat__ = 'reStructuredText'
 
-from stack_adt import *
+from data_structures.stack_adt import *
 
 class Node(Generic[T]):
     """ Implementation of a generic Node class.

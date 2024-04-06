@@ -1,8 +1,8 @@
 from typing import List, Iterable
-from data_structures.list_adt import List
+from data_structures.array_list import ArrayList
 from book import Book
 
-def get_books(books: List[Book], start_year: int) -> Iterable[str]:
+def get_books(books: ArrayList[Book], start_year: int) -> Iterable[str]:
 	raise NotImplementedError()
 
 
