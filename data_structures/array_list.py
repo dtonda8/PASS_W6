@@ -54,8 +54,8 @@ class ArrayList(List[T]):
 
     def __shuffle_left(self, index: int) -> None:
         """ Shuffles all the items to the left from index
-        :complexity best: O(1) shuffle from the start of the list
-        :complexity worst: O(N) shuffle from the end of the list
+        :complexity best: O(1) shuffle from the end of the list
+        :complexity worst: O(N) shuffle from the start of the list
         where N is the number of items in the list
         """
         for i in range(index, len(self)):
