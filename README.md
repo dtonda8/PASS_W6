@@ -17,7 +17,7 @@ python3
 ---
 
 ### Q1: Maximum Nesting Depth of the Parentheses (adapted from [here](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/))
-You are given a valid parentheses string (i.e. every open `(` there is a matching `)` later in the string). You are limited to using linked structures (linked queue/stack/list).
+You are given a valid parentheses string (i.e. for every `(` there is a matching `)` later in the string). You are limited to using linked structures (linked queue/stack/list).
 
 Nesting depth of `()` is 1  
 Nesting depth of `(())` is 2  
@@ -48,7 +48,7 @@ Extension: Can you do this without using any data structures?
 
 You are given a list of book objects sorted by publication year, `books`, and an integer `start_year`. Return an Iterable (any object with the `__iter__` method) of all book titles having a publication year greater than `start_year`. 
 
-Extension: Write an algorithm that does not you any additional data structure and has an initial time complexity of O(log(n)), where n = number of books 
+Extension: Write an algorithm that does not use any additional data structure and has an initial time complexity of O(log(n)), where n = number of books 
 
 *Examples*
 
