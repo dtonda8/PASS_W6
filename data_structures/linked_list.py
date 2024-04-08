@@ -2,6 +2,7 @@
 from data_structures.node import Node
 import data_structures.node as node
 from data_structures.abstract_list import List, T
+from typing import Generic
 
 __author__ = 'Maria Garcia de la Banda and Brendon Taylor. Modified by Alexey Ignatiev'
 __docformat__ = 'reStructuredText'
@@ -60,8 +61,6 @@ class LinkedList(List[T]):
         self.length -= 1
         return item
 
-
-
     def insert(self, index: int, item: T) -> None:
         """ Insert an item at a given position. """
         new_node = Node(item)
@@ -77,3 +76,37 @@ class LinkedList(List[T]):
             previous_node.next = new_node
         
         self.length += 1
+
+    def append(self, item: T) -> None:
+        """ Insert an item at a given position. """
+        self.head = node.append(self.head, item)
+    
+    def __iter__(self):
+        """ Magic method. Creates and returns an iterator for the list. """
+        return LinkedListIterator(self.head)
+
+
+class LinkedListIterator(Generic[T]):
+    """ A full-blown iterator for class LinkedList.
+
+        Attributes:
+            current (Node[T]): the node whose item will be returned next
+    """
+    def __init__(self, node: Node[T]) -> None:
+        """ Initialises self.current to the node given as input. """
+        self.current = node
+
+    def __iter__(self):
+        """ Returns itself, as required to be iterable. """
+        return self
+
+    def __next__(self) -> T:
+        """ Returns the current item and moves to the next node.
+            :raises StopIteration: if the current item does not exist
+        """
+        if self.current is not None:
+            item = self.current.item
+            self.current = self.current.link
+            return item
+        else:
+            raise StopIteration
