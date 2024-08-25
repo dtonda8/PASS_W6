@@ -1,5 +1,3 @@
-from typing import str
-
 def max_nesting(s: str) -> int:
 	raise NotImplementedError()
 

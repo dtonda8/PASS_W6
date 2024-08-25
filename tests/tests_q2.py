@@ -1,7 +1,7 @@
 import unittest
 from Q2 import get_books
 from ed_utils.decorators import number
-from tests.conversions import ALtoList, AL
+from tests.conversions import ListtoSL
 from book import Book
 from typing import Iterable
 
@@ -26,7 +26,7 @@ class Test_Q2(unittest.TestCase):
             Book("The Road", 2006, "Cormac McCarthy")
         ]
         expected = iter(["The Handmaid's Tale", "The Da Vinci Code", "The Road"])
-        self.assertResultEqual(get_books(books, 1984), iter(expected))
+        self.assertResultEqual(get_books(ListtoSL(books), 1984), iter(expected))
 
     @number("2.2")
     def test_extra(self):
@@ -38,7 +38,7 @@ class Test_Q2(unittest.TestCase):
             Book("Harry Potter and the Philosopher's Stone", 1997, "J.K. Rowling")
         ]
         expected = ["The Catcher in the Rye", "Harry Potter and the Philosopher's Stone"]
-        self.assertResultEqual(get_books(books, 1950), iter(expected))
+        self.assertResultEqual(get_books(ListtoSL(books), 1950), iter(expected))
         
 
 if __name__ == '__main__':

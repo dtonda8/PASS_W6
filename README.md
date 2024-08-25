@@ -1,19 +1,6 @@
 # PASS_W6
-Welcome to week 6's coding activity
 - Note: you're not allowed to use in-built lists, sets and dictionaries
-- To run tests, open terminal then:
-```sh
-python3 run_tests.py # and follow command line instructions
-```
-
-- If you encounter errors with the above, make sure that at least python runs on terminal
-```sh
-python3
-```
-
-- You may be directed to Microsoft Store (Windows), if so install python from there
-- For if issues persist on Mac,  see this: https://docs.python-guide.org/starting/install3/osx/
-
+- As in assignments, you should avoid directly using internal variables of classes, and avoid using private methods (methods starting with `_`)
 ---
 
 ### Q1: Maximum Nesting Depth of the Parentheses (adapted from [here](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/))
@@ -59,3 +46,17 @@ Extension: Write an algorithm that does not use any additional data structure an
 **Output**: Iterable of collection ("The Handmaid's Tale", "The Da Vinci Code", "The Road")
 
 
+--- 
+### Running Tests
+To run tests, open terminal then:
+```sh
+python3 run_tests.py # and follow command line instructions
+```
+
+- If you encounter errors with the above, make sure that at least `python` runs on terminal
+```sh
+python3 # or python
+```
+
+- You may be directed to Microsoft Store (Windows), if so install python from there
+- For mac see this: https://docs.python-guide.org/starting/install3/osx/

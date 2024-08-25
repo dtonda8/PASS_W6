@@ -3,6 +3,16 @@ class Book:
         self.book_title = book_title
         self.publication_year = publication_year
         self.author = author
+
+    
+    def __lt__(self, other) -> bool:
+        return self.publication_year < other.publication_year
+
+    def __eq__(self, other) -> bool:
+        return self.publication_year == other.publication_year
+
+    def __le__(self, other) -> bool:
+        return self < other or self == other
     
 
     # Small preview of what Encapsulation, not required for this Weeks coding activity

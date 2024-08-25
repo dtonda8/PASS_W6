@@ -1,9 +1,6 @@
 import unittest
 from Q1 import max_nesting 
 from ed_utils.decorators import number
-from data_structures.linked_list import LinkedList
-from tests.conversions import LLtoList, LL
-from typing import List
 
 
 class Test_Q1(unittest.TestCase):
